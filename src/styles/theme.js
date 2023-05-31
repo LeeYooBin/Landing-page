@@ -22,6 +22,7 @@ const theme = {
     background: '#04032C',
     backgroundSection: 'linear-gradient(180deg, #040327 0%, #0D0E13 24.49%)',
     backgroundForm: '#0E0D40',
+    backgroundMenu: '#2d3142',
   },
   fonts: {
     display: '800 6.2rem/9.6rem "Heebo", sans-serif',

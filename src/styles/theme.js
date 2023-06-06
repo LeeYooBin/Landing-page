@@ -31,11 +31,11 @@ const theme = {
     heading3: '400 2rem/2.4rem "Heebo", sans-serif',
     mobileHead: '800 3.6rem/5rem "Heebo", sans-serif',
     mobileText: '500 1.4rem/2.4rem "Heebo", sans-serif',
-    text0: '400 1.4rem/2.4rem "Heebo", sans-serif',
-    text1: '400 1.6rem/2.4rem "Heebo", sans-serif',
-    text2: '500 1.4rem/2rem "Heebo", sans-serif',
-    text3: '500 1.8rem/2.4rem "Heebo", sans-serif',
-    text4: '500 1.8rem/3.2rem "Heebo", sans-serif',
+    // text0: '400 1.4rem/2.4rem "Heebo", sans-serif',
+    // text1: '400 1.6rem/2.4rem "Heebo", sans-serif',
+    text: '500 1.4rem/2rem "Heebo", sans-serif',
+    // text3: '500 1.8rem/2.4rem "Heebo", sans-serif',
+    // text4: '500 1.8rem/3.2rem "Heebo", sans-serif',
   },
 };
 

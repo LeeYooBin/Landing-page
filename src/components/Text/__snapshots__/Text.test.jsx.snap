@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component Should match snapshot 1`] = `
+.c0 {
+  font: 500 1.4rem/2rem "Heebo",sans-serif;
+  color: #FFF;
+  opacity: 0.7;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Text
+  </p>
+</div>
+`;

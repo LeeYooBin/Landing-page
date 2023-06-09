@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component Should match snapshot 1`] = `
+.c0 {
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  z-index: 20;
+}
+
+.c0 div {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+  background-color: #898A93;
+}
+
+.c0 div:nth-child(1) {
+  transform: rotate(0);
+}
+
+.c0 div:nth-child(2) {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.c0 div:nth-child(3) {
+  transform: rotate(0);
+}
+
+.c1 {
+  display: none;
+  width: auto;
+  height: auto;
+  min-height: 25vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%;
+  background-color: #2d3142;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 5rem;
+  z-index: 15;
+}
+
+@media (min-width: 920px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media (min-width: 920px) {
+  .c1 {
+    position: static;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    background: transparent;
+    width: auto;
+    justify-content: flex-start;
+    min-height: auto;
+  }
+}
+
+<div>
+  <div
+    class=""
+  >
+    <button
+      class="c0"
+    >
+      <div />
+      <div />
+      <div />
+    </button>
+    <nav
+      class="c1"
+    />
+  </div>
+</div>
+`;

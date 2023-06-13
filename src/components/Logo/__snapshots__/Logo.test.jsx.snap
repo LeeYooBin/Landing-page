@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo component should match snapshot 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+.c1 {
+  width: auto;
+  height: auto;
+}
+
+.c2 {
+  width: 20.1rem;
+  height: 4.124rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <a
+      class="c1"
+      href="https://example.com"
+    >
+      <img
+        alt="Logo"
+        class="c2"
+        src="logo.png"
+      />
+    </a>
+  </div>
+</div>
+`;

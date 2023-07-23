@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import theme from '../../styles/theme';
 
-const Content = styled.h1`
+const Header = styled.h2`
   font: ${({ isMain }) =>
     isMain ? theme.fonts.mobileHead : theme.fonts.heading2};
   color: ${theme.colors.text};
@@ -16,13 +16,16 @@ const Content = styled.h1`
   }
 `;
 
-const Heading = ({ text = '', isMain = false }) => (
-  <Content isMain={isMain}>{text}</Content>
+const Heading = ({ text = '', isMain = false, ariaLabel = '' }) => (
+  <Header isMain={isMain} aria-label={ariaLabel}>
+    {text}
+  </Header>
 );
 
 Heading.propTypes = {
   text: PropTypes.string,
   isMain: PropTypes.bool,
+  ariaLabel: PropTypes.string,
 };
 
 export default Heading;

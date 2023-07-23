@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
 import theme from '../../styles/theme';
 
 const Content = styled.div`
@@ -35,7 +36,7 @@ const Image = styled.img`
 const Gallery = ({ imageList }) => (
   <Content>
     {imageList.map((item) => (
-      <Image src={item.image} alt={item.alt} />
+      <Image key={uuidv4()} src={item.image} alt={item.alt} />
     ))}
   </Content>
 );

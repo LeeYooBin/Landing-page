@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { v4 as uuidv4 } from 'uuid';
 import Link from '../Link';
 
 const Content = styled.div``;
@@ -89,7 +90,7 @@ const Navbar = ({ links = [] }) => {
       </StyledBurger>
       <Menu isOpen={isOpen}>
         {links.map((item) => (
-          <Link link={item} onClick={() => setIsOpen(!isOpen)} />
+          <Link key={uuidv4()} link={item} onClick={() => setIsOpen(!isOpen)} />
         ))}
       </Menu>
     </Content>

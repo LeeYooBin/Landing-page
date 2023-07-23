@@ -1,12 +1,16 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Link from '../Link';
 
 const Content = styled.div``;
 
-const StyledBurger = styled.div`
+const StyledBurger = styled.button`
   width: 2rem;
   height: 2rem;
+  background: transparent;
+  border: none;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -24,7 +28,7 @@ const StyledBurger = styled.div`
     background-color: ${({ theme }) => theme.colors.gray4};
 
     &:nth-child(1) {
-      transform: ${({ isOpen }) => (isOpen ? 'rotate(48deg)' : 'rotate(0)')};
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(49deg)' : 'rotate(0)')};
     }
 
     &:nth-child(2) {
@@ -34,7 +38,7 @@ const StyledBurger = styled.div`
     }
 
     &:nth-child(3) {
-      transform: ${({ isOpen }) => (isOpen ? 'rotate(-48deg)' : 'rotate(0)')};
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(-49deg)' : 'rotate(0)')};
     }
   }
 
@@ -67,30 +71,13 @@ const Menu = styled.nav`
     margin: 0;
     flex-direction: row;
     background: transparent;
-    position: static;
     width: auto;
     justify-content: flex-start;
     min-height: auto;
   }
 `;
 
-const Link = styled.a`
-  text-decoration: none;
-  color: ${({ theme }) => theme.colors.text};
-  font: ${({ theme }) => theme.fonts.text1};
-
-  @media (min-width: 920px) {
-    text-align: center;
-    color: ${({ theme }) => theme.colors.text};
-    margin-left: 5vw;
-
-    &:nth-last-child(0) {
-      margin: 0;
-    }
-  }
-`;
-
-const Navbar = ({ links }) => {
+const Navbar = ({ links = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -102,14 +89,7 @@ const Navbar = ({ links }) => {
       </StyledBurger>
       <Menu isOpen={isOpen}>
         {links.map((item) => (
-          <Link
-            href={`#${item}`}
-            onClick={() =>
-              setIsOpen((openState) => (openState ? !openState : openState))
-            }
-          >
-            {item.replace(/^\w/, (match) => match.toUpperCase())}
-          </Link>
+          <Link link={item} onClick={() => setIsOpen(!isOpen)} />
         ))}
       </Menu>
     </Content>

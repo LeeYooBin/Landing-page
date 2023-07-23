@@ -29,6 +29,7 @@ const theme = {
     heading1: '700 3.2rem/4.8rem "Heebo", sans-serif',
     heading2: '500 2.4rem/3.2rem "Heebo", sans-serif',
     heading3: '400 2rem/2.4rem "Heebo", sans-serif',
+    heading4: '400 1.4rem/1.8rem "Heebo", sans-serif',
     mobileHead: '800 3.6rem/5rem "Heebo", sans-serif',
     mobileText: '500 1.4rem/2.4rem "Heebo", sans-serif',
     // text0: '400 1.4rem/2.4rem "Heebo", sans-serif',

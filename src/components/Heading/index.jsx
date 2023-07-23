@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import theme from '../../styles/theme';
 
-const Header = styled.header`
+const Header = styled.h2`
   font: ${({ isMain }) =>
     isMain ? theme.fonts.mobileHead : theme.fonts.heading2};
   color: ${theme.colors.text};

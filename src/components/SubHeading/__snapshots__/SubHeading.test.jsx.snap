@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component Should match snapshot 1`] = `
+.c0 {
+  font: 400 1.4rem/1.8rem "Heebo",sans-serif;
+  color: #F5D15F;
+  text-align: center;
+  line-height: 3.2rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 920px) {
+  .c0 {
+    font: 400 2rem/2.4rem "Heebo",sans-serif;
+    text-align: left;
+  }
+}
+
+<div>
+  <h2
+    class="c0"
+  >
+    Text
+  </h2>
+</div>
+`;
